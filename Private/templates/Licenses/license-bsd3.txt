@@ -1,5 +1,3 @@
-<?php
-
 /**
  * Copyright (c) 2016, the MVC-skeleton's contributors
  * All rights reserved.
@@ -26,38 +24,11 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * class.user.inc
+ * fileName.php
  * 
- * User class.
+ * Description of the file.
  *
  * @author Daniele Bonini <danielemi@hotmail.com>
  * @copyrights (c) 2016, the MVC-skeleton's contributors     
  * @license https://opensource.org/licenses/BSD-3-Clause 
  */
-
-/**
- * User
- *
- * User class
- *
- * @package  models
- * @author   Daniele Bonini <danielemi@hotmail.com>
- * @version  1.0
- * @access   public
- */
-class User 
-{
-  /**
-   * The first name
-   *  
-   * @access public
-   */
-  public $firstname;
-
-  /**
-   * The surname
-   *  
-   * @access public
-   */
-  public $surname;
-}
