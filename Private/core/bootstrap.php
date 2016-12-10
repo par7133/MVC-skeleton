@@ -13,7 +13,7 @@ class Bootstrap
   
   public function __construct()
   {
-    settype($url, "string");
+    settype($url, "array");
     settype($qs, "string");
     
     $this->parseGET($url, $qs);

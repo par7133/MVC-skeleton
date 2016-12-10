@@ -45,22 +45,18 @@ function autoloader($construct) {
     } else {
       $incPath = CONTROLLERS_PATH . DIRECTORY_SEPARATOR . strtolower($construct) . ".inc";
     }  
+  
+  } elseif ($construct === "Bootstrap") {
+    // if it is the bootstrap  
+
+    $incPath = CORE_PATH . DIRECTORY_SEPARATOR . "bootstrap.php";
     
   } else {
-
-    switch ($construct) {
-      case "Bootstrap":
-        $incPath = CORE_PATH . DIRECTORY_SEPARATOR . "bootstrap.php";
-        break;
-      default:
-        // if it is a class
-
-        if (isset($constructPath)) {
-          $incPath = CLASSES_PATH . DIRECTORY_SEPARATOR . $constructPath . DIRECTORY_SEPARATOR . "class." . strtolower($construct) . ".inc";
-        } else {
-          $incPath = CLASSES_PATH . DIRECTORY_SEPARATOR . "class." . strtolower($construct) . ".inc";
-        }
-        break;
+    // if it is a class
+    if (isset($constructPath)) {
+      $incPath = CLASSES_PATH . DIRECTORY_SEPARATOR . $constructPath . DIRECTORY_SEPARATOR . "class." . strtolower($construct) . ".inc";
+    } else {
+      $incPath = CLASSES_PATH . DIRECTORY_SEPARATOR . "class." . strtolower($construct) . ".inc";
     }
 
   }
