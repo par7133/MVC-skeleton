@@ -49,7 +49,7 @@ function autoloader($construct) {
   } elseif ($construct === "Bootstrap") {
     // if it is the bootstrap  
 
-    $incPath = CORE_PATH . DIRECTORY_SEPARATOR . "bootstrap.php";
+    $incPath = CORE_PATH . DIRECTORY_SEPARATOR . "bootstrap.inc";
     
   } else {
     // if it is a class
@@ -74,3 +74,4 @@ spl_autoload_register("autoloader", true, true);
 define("FUNCTIONS_PATH", __DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."functions");
 
 require FUNCTIONS_PATH . DIRECTORY_SEPARATOR . "func.various.inc";
+

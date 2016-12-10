@@ -56,5 +56,5 @@ class Bootstrap
       $qs = rtrim($qs, "&");
     }
   }
-  
 }
+

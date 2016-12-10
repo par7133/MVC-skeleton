@@ -1,5 +1,5 @@
 <?php
 
-  require "../Private/core/init.php";
+  require "../Private/core/init.inc";
   
   $Bootstrap = new Bootstrap();
