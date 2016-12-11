@@ -59,8 +59,8 @@ class HomeController extends Controller
     $_GET1 = arrayFromQS($qs);
     
     $modelUser = $this->model("User");
-    $modelUser->firstname = $_GET1['fn'];
-    $modelUser->surname = $_GET1['sn'];
+    $modelUser->firstname = isset1($_GET1['fn'], "donald");
+    $modelUser->surname = isset1($_GET1['sn'], "duck");
     
     $aModels["User"] = $modelUser; 
     

@@ -46,6 +46,10 @@ function arrayFromQS ($qs) {
   settype($retval, "array");
   settype($aPairs, "array");
 
+  if ($qs==="") {
+    return [];
+  }
+    
   $aPairs = explode("&", rtrim($qs, "&"));
 
   foreach ($aPairs as $pair) {
@@ -57,3 +61,17 @@ function arrayFromQS ($qs) {
   return $retval;
 }
 
+/**
+ * Check if a variable is set with a default return
+ * 
+ * @param mixed $var the variable to check
+ * @param mixed $default the default value
+ * @return mixed the return value
+ */
+function isset1(& $var, $default) {
+  if (isset($var)) {
+    return $var;
+  } else {
+    return $default;
+  }
+}

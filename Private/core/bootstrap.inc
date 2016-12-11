@@ -85,9 +85,11 @@ class Bootstrap
     
     $this->parseGET($url, $qs);
     
-    if (file_exists("../Private/controllers/" . $url[0] . "controller.inc")) {
-      $this->controller = ucfirst($url[0]) . "Controller";
-      unset($url[0]);
+    if (isset($url[0])) {
+      if (file_exists("../Private/controllers/" . $url[0] . "controller.inc")) {
+        $this->controller = ucfirst($url[0]) . "Controller";
+        unset($url[0]);
+      }
     }
     
     $this->controller = new $this->controller;
