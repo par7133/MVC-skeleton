@@ -9,6 +9,6 @@ A basic MVC skeleton
 
 ## Feedback
 
-posta@elettronica.lol
+Feedback: <a href="mailto:code@gaox.io">code@gaox.io</a>
   
  
